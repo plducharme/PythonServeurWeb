@@ -22,7 +22,10 @@ Ce projet contient trois fichiers principaux:
   - Implémenter la méthode do_POST(self) permettant de sauvegarder en mémoire une liste d'employés à partir du contenu de la requête
     - Le "body" est String (en bytes) contenant une entrée sous la forme \<nom de famille\>,\<prénom\>,\<salaire\>
 - ClientWeb.py
-  - Modifier le code pour envoyer plusieurs Employés
+  - Modifier le code pour envoyer plusieurs Employés via la requête POST
+  - Les requêtes GET peuvent être aussi tester dans le navigateur
+    - http://localhost:8080/
+    - http://localhost:8080/sommaire
 - ServeurWeb.py
   - Implémenter la méthode do_GET(self)
     - Pour qu'elle affiche la liste des employées avec leurs salaires pour la requête GET /
