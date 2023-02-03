@@ -9,8 +9,9 @@ Cette classe permet:
 - de retourner la liste des employees ainsi que leur salaire sur GET /
 - de retourner la liste des employees ainsi que la mediane des salaires GET /sommaire
 '''
-class EmployeHTTPRequestHandler(BaseHTTPRequestHandler):
 
+class EmployeHTTPRequestHandler(BaseHTTPRequestHandler):
+    liste_employes = []
     def do_GET(self):
         # Renvoie du statut
         self.send_response(200)
@@ -19,12 +20,12 @@ class EmployeHTTPRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
         # Logique a implementer
-
         #
         # String HTML de test
+        # Exemple pour acceder a une liste static
         response_string = '<html>' \
                           ' <head><title>Employes Acme Co</title></head>' \
-                          ' <p>Ceci est une String de test!' \
+                          ' <p>Ceci est une String de test!' + str(EmployeHTTPRequestHandler.liste_employes) + \
                           '</html>'
         # Exemple de renvoie d'une String convertie en Bytes UTF-8
         self.wfile.write(bytes(response_string, 'utf-8'))
@@ -36,7 +37,8 @@ class EmployeHTTPRequestHandler(BaseHTTPRequestHandler):
         body = self.rfile.read(content_length)
         print(body)
         # logique pour lire les employes et leurs salaires a implementer
-
+        # Exemple pour acceder a une variable static
+        EmployeHTTPRequestHandler.liste_employes.append(body)
         #
         # Renvoie du statut
         self.send_response(200)
