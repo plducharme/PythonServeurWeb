@@ -22,7 +22,7 @@ Ce projet contient trois fichiers principaux:
   - Client Web permettant de tester le serveur web
 
 ## Exercices
-- ServeurWeb.py
+- EmployeHTTPRequestHandler.py
   - Implémenter la méthode do_POST(self) permettant de sauvegarder en mémoire une liste d'employés à partir du contenu de la requête
     - Le "body" est String (en bytes) contenant une entrée sous la forme \<nom de famille\>,\<prénom\>,\<salaire\>
 - ClientWeb.py
@@ -30,7 +30,7 @@ Ce projet contient trois fichiers principaux:
   - Les requêtes GET peuvent être aussi tester dans le navigateur
     - http://localhost:8080/
     - http://localhost:8080/sommaire
-- ServeurWeb.py
+- EmployeHTTPRequestHandler.py
   - Implémenter la méthode do_GET(self)
     - Pour qu'elle affiche la liste des employées avec leurs salaires pour la requête GET /
     - Pour qu'elle affiche la liste des employées avec leurs salaires en order croissant de salaire ainsi que la moyenne des salaires et la médiane des salaires pour la requête GET /sommaire
