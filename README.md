@@ -1,6 +1,8 @@
 # PythonServeurWeb
 ## Instructions de mise en place
 - Cloner le dépot https://github.com/plducharme/PythonServeurWeb.git
+- Ajouter l'environnement virtuel dans PyCharm
+  - File -> Settings -> Project: Python ServeurWeb -> Python Interpreter -> add local interpreter (à droite) -> OK
 - Installer le package "requests"
   - PyCharm:
     - menu View -> Tool Windows -> Python Packages
