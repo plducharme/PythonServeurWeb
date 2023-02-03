@@ -12,17 +12,19 @@
 
 ## Description
 Ce projet contient trois fichiers principaux:
-- EmployeHTTPRequestHandler.py: Contient la classe impémentant la logique pour gérer les requêtes
-- ServeurWeb.py: Permet de démarrer le serveur Web
-- ClentWeb.py: Client Web
-
+- EmployeHTTPRequestHandler.py
+  - Contient la classe impémentant la logique pour gérer les requêtes
+- ServeurWeb.py
+  - Permet de démarrer le serveur Web
+- ClentWeb.py
+  - Client Web permettant de tester le serveur web
 
 ## Exercices
 - ServeurWeb.py
   - Implémenter la méthode do_POST(self) permettant de sauvegarder en mémoire une liste d'employés à partir du contenu de la requête
     - Le "body" est String (en bytes) contenant une entrée sous la forme \<nom de famille\>,\<prénom\>,\<salaire\>
 - ClientWeb.py
-  - Modifier le code pour envoyer plusieurs Employés via la requête POST
+  - Modifier le code pour envoyer plusieurs Employés via des requêtes POST
   - Les requêtes GET peuvent être aussi tester dans le navigateur
     - http://localhost:8080/
     - http://localhost:8080/sommaire
